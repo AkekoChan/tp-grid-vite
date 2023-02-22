@@ -1,8 +1,12 @@
+// Reset css
 @import "vendors/reset.scss";
 
+// Blocs de style
+@import "blocs/header.scss";
 @import "blocs/table.scss";
 @import "blocs/element.scss";
 
+// Style global
 @import "global/font.scss";
 
 * {

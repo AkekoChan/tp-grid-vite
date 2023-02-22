@@ -32,3 +32,15 @@ $types: alkaliMetal lanthanide nobleGas transitionMetal postTransitionMetal
     background-color: hsl($hue, 50, 50);
   }
 }
+
+$periods: 9;
+$groups: 18;
+
+@for $period from 0 through $periods {
+  @for $group from 0 through $groups {
+    [data-period="#{$period}"][data-group="#{$group}"] {
+      grid-row: #{$period};
+      grid-column: #{$group};
+    }
+  }
+}
