@@ -1,0 +1,14 @@
+@import "vendors/reset.scss";
+
+@import "blocs/table.scss";
+@import "blocs/element.scss";
+
+@import "global/font.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}

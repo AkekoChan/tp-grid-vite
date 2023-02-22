@@ -1,0 +1,22 @@
+.element {
+  background: lightgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.element__symbol {
+  font-size: 2rem;
+}
+
+$types: alkaliMetal lanthanide nobleGas transitionMetal postTransitionMetal
+  alkalineEarthMetal actinide metalloid otherNonMetal;
+
+@each $type in $types {
+  .element--#{$type} {
+    $step: 360 / length($types);
+    $hue: $step * index($types, $type);
+    background-color: hsl($hue, 50, 50);
+  }
+}
