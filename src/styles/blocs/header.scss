@@ -1,4 +1,14 @@
+@mixin for-big-desktop {
+  @media (min-width: 87.5em) {
+    @content;
+  }
+}
+
 h1 {
-  font-size: 4rem;
+  font-size: 2rem;
   padding: 1rem 0 0 1rem;
+
+  @include for-big-desktop {
+    font-size: 4rem;
+  }
 }
